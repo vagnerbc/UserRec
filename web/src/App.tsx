@@ -1,8 +1,10 @@
 import React from 'react';
 
+import FirstName from './components/first-name'
+
 function App() {
   return (
-    <div>App</div>
+      <FirstName />
   );
 }
 
