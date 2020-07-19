@@ -1,0 +1,34 @@
+{
+  "name": "user-rec",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:vagnerbc/UserRec.git",
+  "author": "Vagner Bernal de Castro <vagner.bcastro@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "lerna run start --stream",
+    "server": "cd packages/server && yarn dev",
+    "web": "cd packages/web && yarn start",
+    "build": "lerna run build",
+    "clean": "yarn clean:artifacts && yarn clean:packages && yarn clean:root",
+    "clean:artifacts": "lerna run clean --parallel",
+    "clean:packages": "lerna clean --yes",
+    "clean:root": "rm -rf node_modules"
+  },
+  "devDependencies": {
+    "@types/eslint": "^7.2.0",
+    "@typescript-eslint/eslint-plugin": "^3.6.0",
+    "@typescript-eslint/parser": "^3.6.0",
+    "eslint": "^7.4.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.5",
+    "lerna": "^3.22.1",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.6"
+  }
+}

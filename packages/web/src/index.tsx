@@ -1,8 +1,8 @@
-import React, { Suspense } from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React, { Suspense } from 'react'
+import ReactDOM from 'react-dom'
+import App from './App'
 
-import './i18n';
+import './i18n'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -11,4 +11,4 @@ ReactDOM.render(
     </Suspense>
   </React.StrictMode>,
   document.getElementById('root')
-);
+)
