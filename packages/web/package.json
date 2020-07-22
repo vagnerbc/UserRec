@@ -1,7 +1,6 @@
 {
-  "name": "user-rec-web",
+  "name": "@user-rec/web",
   "version": "0.0.1",
-  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -10,18 +9,15 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
-    "i18next": "^19.6.2",
-    "i18next-browser-languagedetector": "^5.0.0",
-    "i18next-http-backend": "^1.0.17",
+    "@user-rec/components": "^0.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-i18next": "^11.7.0",
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "browserslist": {
@@ -35,5 +31,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "customize-cra": "^1.0.0",
+    "react-app-rewired": "^2.1.6"
   }
 }

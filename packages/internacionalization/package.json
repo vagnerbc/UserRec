@@ -1,0 +1,16 @@
+{
+  "name": "@user-rec/internacionalization",
+  "version": "0.0.1",
+  "description": "Internacionalization",
+  "author": "Vagner Bernal de Castro <vagner.bcastro@gmail.com>",
+  "homepage": "https://github.com/vagnerbc/UserRec#readme",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "dependencies": {
+    "i18next": "^19.6.2",
+    "react-i18next": "^11.7.0",
+    "i18next-browser-languagedetector": "^5.0.0"
+  },
+  "devDependencies": {
+  }
+}

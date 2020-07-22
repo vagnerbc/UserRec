@@ -1,5 +1,5 @@
 {
-	"name": "user-rec-server",
+	"name": "@user-rec/server",
 	"version": "0.0.1",
 	"description": "System to emergency situations",
 	"main": "index.js",
