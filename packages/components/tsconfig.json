@@ -10,8 +10,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "isolatedModules": true,
-    "jsx": "react",
-    "strict": true
+    "jsx": "react"
   },
   "include": [
     "src"

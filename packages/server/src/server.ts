@@ -13,6 +13,6 @@ app.use(cors())
 app.use('/static', express.static(path.resolve(__dirname, '/public')))
 app.use(router)
 
-app.listen(3000)
+app.listen(3333)
 
 export default app

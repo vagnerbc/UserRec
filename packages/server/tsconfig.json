@@ -1,12 +1,9 @@
 {
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "ES2017",
-    "allowJs": true,
     "sourceMap": true,
     "outDir": "./dist",
     "removeComments": true,
-    "strict": true,
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
@@ -30,12 +27,8 @@
       "./node_modules/@types",
       "./src/@types"
     ],
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
   },
   "include": [
     "src/**/*"
