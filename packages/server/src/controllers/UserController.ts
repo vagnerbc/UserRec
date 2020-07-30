@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
 import { encryptValue } from '@utils/index'
-import User from '@models/User'
+import User from '@repositories/Impl/models/UserSchema'
 
 class UserController {
   async add (req: Request, res: Response) {

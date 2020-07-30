@@ -1,13 +1,8 @@
-import express from 'express'
+import { Router } from 'express'
+import { createUserController } from '@useCases/CreateUser'
 
-import UserController from '@controllers/UserController'
+const router = Router()
 
-const router = express.Router()
+router.post('/user', (request, response) => createUserController.handle(request, response))
 
-router.get('/', (req, res) => {
-  res.send('Hello Wolrd')
-})
-
-router.post('/user', UserController.add)
-
-export default router
+export { router }

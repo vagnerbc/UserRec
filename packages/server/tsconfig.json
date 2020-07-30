@@ -11,7 +11,19 @@
         "src/controllers/*"
       ],
       "@models/*": [
-        "src/models/*"
+        "src/repositories/models/*"
+      ],
+      "@entities/*": [
+        "src/entities/*"
+      ],
+      "@repositories/*": [
+        "src/repositories/*"
+      ],
+      "@providers/*": [
+        "src/providers/*"
+      ],
+      "@useCases/*": [
+        "src/useCases/*"
       ],
       "@views/*": [
         "src/views/*"
