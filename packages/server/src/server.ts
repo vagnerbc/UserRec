@@ -1,3 +1,3 @@
 import { app } from './app'
 
-app.listen(3333)
+app.listen(Number.parseInt(process.env.PORT), process.env.HOST)

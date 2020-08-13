@@ -2,7 +2,6 @@ import { IUsersRepository } from "@repositories/IUsersRepository"
 import MongoDB from "../../database/mongo"
 import { User } from "@entities/User"
 import UserSchema from "./models/UserSchema"
-import { response } from "express"
 
 export class MongoUsersRepository implements IUsersRepository {
 
@@ -23,11 +22,14 @@ export class MongoUsersRepository implements IUsersRepository {
     await schema.save()
   }
 
-  findById(id: string): Promise<User> {
-    throw new Error("Method not implemented.")
+  async findById(id: string): Promise<User> {
+    const response = await UserSchema.findById(id)
+    return response;
   }
-  findAll(): Promise<User[]> {
-    throw new Error("Method not implemented.")
+
+  async findAll(): Promise<User[]> {
+    const response = await UserSchema.find();
+    return response;
   }
 
 }

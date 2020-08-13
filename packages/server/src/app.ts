@@ -3,6 +3,9 @@ import cors from 'cors'
 import bodyParser from 'body-parser'
 import path from 'path'
 import { router } from './routes'
+import * as dotenv from 'dotenv';
+
+dotenv.config()
 
 const app = express()
 app.use(bodyParser.json())
