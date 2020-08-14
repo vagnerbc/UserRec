@@ -1,9 +1,10 @@
-import { IUsersRepository } from "@repositories/IUsersRepository"
-import MongoDB from "../../database/mongo"
-import { User } from "@entities/User"
-import UserSchema from "./models/UserSchema"
+import MongoDB from "src/database/mongo";
+import { IUserRepository } from "./IUserRepository";
+import { User } from "../User";
+import UserSchema from "./UserSchema";
 
-export class MongoUsersRepository implements IUsersRepository {
+
+export class MongoUserRepository implements IUserRepository {
 
   constructor() {
     MongoDB.connect()

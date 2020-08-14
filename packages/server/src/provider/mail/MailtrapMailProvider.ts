@@ -1,6 +1,7 @@
 import nodemailer from 'nodemailer'
 import Mail from 'nodemailer/lib/mailer'
-import { IMailProvider, IMessage } from '@providers/IMailProviders'
+import { IMailProvider, IMessage } from './IMailProviders'
+
 
 export class MailtrapMailProvider implements IMailProvider {
   private transporter: Mail

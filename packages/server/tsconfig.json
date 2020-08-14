@@ -7,32 +7,14 @@
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
-      "@controllers/*": [
-        "src/controllers/*"
-      ],
-      "@models/*": [
-        "src/repositories/models/*"
-      ],
-      "@entities/*": [
-        "src/entities/*"
-      ],
-      "@repositories/*": [
-        "src/repositories/*"
-      ],
-      "@providers/*": [
-        "src/providers/*"
-      ],
-      "@useCases/*": [
-        "src/useCases/*"
-      ],
-      "@views/*": [
-        "src/views/*"
+      "@provider/*": [
+        "src/provider/*"
       ],
       "@config/*": [
         "src/config/*"
       ],
-      "@utils/*": [
-        "src/utils/*"
+      "@util/*": [
+        "src/util/*"
       ]
     },
     "typeRoots": [

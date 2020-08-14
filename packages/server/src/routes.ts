@@ -1,6 +1,6 @@
 import { Router } from 'express'
-import { createUserController } from '@useCases/CreateUser'
-import { showUserController } from '@useCases/ShowUser'
+import { createUserController } from './entity/user/useCase/Create'
+import { showUserController } from './entity/user/useCase/Show'
 
 const router = Router()
 

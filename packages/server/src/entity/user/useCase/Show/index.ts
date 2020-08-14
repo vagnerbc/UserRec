@@ -1,8 +1,8 @@
-import { MongoUsersRepository } from "@repositories/Impl/MongoUsersRepository"
+import { MongoUserRepository } from "../../repository/MongoUserRepository"
 import { ShowUserUseCase } from "./ShowUserUseCase"
 import { ShowUserController } from "./ShowUserController"
 
-const mongoUsersRepository = new MongoUsersRepository()
+const mongoUsersRepository = new MongoUserRepository()
 
 const showUserUseCase = new ShowUserUseCase(mongoUsersRepository)
 

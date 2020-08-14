@@ -1,13 +1,13 @@
-import { IUsersRepository } from "@repositories/IUsersRepository";
-import { IMailProvider } from "@providers/IMailProviders";
+import { IUserRepository } from "../../repository/IUserRepository";
+import { IMailProvider } from "@provider/mail/IMailProviders";
 import { ICreateUserDTO } from "./CreateUserDTO";
-import { encryptValue } from "@utils/index";
-import { User } from "@entities/User";
+import { encryptValue } from "@util/crypt";
+import { User } from "../../User";
 
 export class CreateUserUseCase {
 
   constructor(
-    private usersRepository: IUsersRepository,
+    private usersRepository: IUserRepository,
     private mailProvider: IMailProvider
   ) {}
 
